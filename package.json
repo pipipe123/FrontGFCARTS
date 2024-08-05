@@ -8,6 +8,10 @@
       "android",
       "web"
     ],
+    "scripts": {
+      "start": "expo start",
+      "web": "expo build:web"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
