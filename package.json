@@ -10,7 +10,7 @@
     ],
     "scripts": {
       "start": "expo start",
-      "web": "expo build:web"
+      "web": "npx expo export:web"
     },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
