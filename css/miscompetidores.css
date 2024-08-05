@@ -1,0 +1,212 @@
+/* Estilos generales */
+.sidebar-miscompetidores button {
+    width: 100%;
+}
+.competidor-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .btn-agregar-torneo {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-agregar-torneo:hover {
+    background-color: darkgreen;
+  }
+  
+  .scrollable-content-miscompetidores {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+.sidebar-miscompetidores button:hover,
+.sidebar-miscompetidores button:active {
+    transform: translateX(10px) translateY(10px);
+}
+
+.sidebar-miscompetidores ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-miscompetidores ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    margin: 15px;
+    padding: 0;
+}
+
+.container-miscompetidores {
+    display: flex;
+    width: 100%;
+}
+.menu-icon-mainmiscompetidores {
+    margin-top: 10px;
+    font-size: 60px;
+    
+  }
+.menu-icon-miscompetidores {
+    font-size: 40px;
+}
+
+.sidebar-miscompetidores {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.content-miscompetidores {
+    margin-left: 100px;
+    padding-top: 10vh;
+    position: relative;
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.scrollable-content-miscompetidores {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.scrollable-content-miscompetidores ul {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scrollable-content-miscompetidores li {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.fondo-principal-miscompetidores {
+    margin-top: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.fondo-principal-miscompetidores img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-container-miscompetidores {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.admin-miscompetidores,
+.info-container-miscompetidores,
+.letrero-miscompetidores,
+.algomas-miscompetidores {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+hr.divider-miscompetidores {
+    border: 0;
+    height: 1px;
+    background: #c8c8c8;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.notas-version-miscompetidores {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info-container-miscompetidores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    width: 80%;
+    height: auto;
+}
+
+.notas-version-miscompetidores,
+.mis-eventos-miscompetidores {
+    width: 100%;
+    height: 100%;
+}
+
+.fila-1-miscompetidores {
+    height: 20%;
+}
+
+.fila-2-miscompetidores {
+    width: 50%;
+}
+
+.fila-3-miscompetidores {
+    margin-top: 30px;
+    position: relative;
+    height: 50%;
+}
+
+.fila-3-miscompetidores td {
+    padding: 10px;
+}
+
+.algomas-miscompetidores {
+    height: 100%;
+}
+.btn-delete-competidor {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  

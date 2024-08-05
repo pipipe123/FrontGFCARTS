@@ -1,0 +1,223 @@
+
+  /* En login.css y signup.css */
+/* animaciones */
+  @keyframes desliza-salida-signup{
+    from{
+      width: 30%;
+    }
+    to{
+      width: 100%;
+    }
+  }
+  @keyframes desliza-salida-signup-form {
+    from{
+      width: 70%;
+    }
+    to{
+      width: 0%;
+    }
+  }
+  @keyframes desliza-entrada-signup{
+    from{
+      width: 100%;
+    }
+    to{
+      width: 30%;
+    }
+  }
+  @keyframes desliza-entrada-signup-form {
+    from{
+      width: 0%;
+    }
+    to{
+      width: 70%;
+    }
+  }
+  @keyframes text-out-signup {
+
+    from{
+      opacity: 1;
+
+
+    }
+    to{
+      opacity: 0;
+    }
+  }
+  @keyframes text-in-signup {
+    from{
+      
+      opacity: 0;
+
+    }
+    to{
+      opacity: 1;
+     
+    }
+    
+  }
+  @keyframes backgroundgmove-signup {
+    from {
+      transform: translateX(-100%);
+
+  }
+  to {
+      transform: translateX(0);
+
+    }
+  }
+
+
+  .contenedor {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      background-color: rgb(0, 0, 0);
+  }
+  .contenedor.slide-in-right .side {
+
+    animation:desliza-salida-signup 1s forwards;
+  }
+  .contenedor.slide-in-right .forms {
+
+    animation:desliza-salida-signup-form 1s forwards;
+  }
+
+  .contenedor.slide-in-right .side-content{
+
+    animation:text-out-signup 1s forwards;
+  }
+  .side {
+      width: 100%;
+      display: flex;
+      height: 100vh;
+      z-index: 3; /* Asegúrate de que la sección side esté por encima del pseudo-elemento */
+      margin-left: 0;
+      position: relative;
+      background-color: rgba(255, 255, 255); /* Ajusta la opacidad según sea necesario */
+      box-shadow: 0px 7px 10px rgba(0,0,0,0.7);
+      animation: desliza-entrada-signup 1.5s forwards;
+      animation-delay: 600ms;
+
+  }
+  .forms {
+    width: 0%;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: desliza-entrada-signup-form 1.5s forwards;
+    animation-delay: 600ms;
+  }
+  .side-content {
+
+
+
+      opacity: 0;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 4; /* Asegúrate de que el contenido esté por encima de todo */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      animation-delay: 200ms;
+      animation: text-in-signup 6s forwards;
+
+  }
+
+
+  .fondo{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 70%;
+      height: 100%;
+
+
+      filter: blur(10px);
+      z-index: 1;
+
+
+  } 
+
+  .fondo img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .forms-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    animation: text-in-signup 3s backwards;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formularios {
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    box-shadow: 0 0px -10px rgba(0,0,0,0.7);
+}
+  .separador{
+      height: 10rem;
+  }
+
+  .forms-content table{
+      
+      margin-top:30% ;
+  }
+
+  .forms-content td{
+      padding: 1rem;
+  }
+
+  .forms-content h1{
+      font-size: 6rem;
+  }
+
+  /* .formularios{
+      display: flex;
+      margin-left: 25%;
+      margin-right: 25%;
+      height: 3rem;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      background-color: rgb(222, 222, 222);
+      box-shadow: 0 0px -10px rgba(0,0,0,0.7);
+
+  } */
+
+  .separador2{
+  height: 15%;
+  }
+
+  .icon{
+
+      height: 1rem;
+
+      padding-right: 1rem;
+      padding-left: 1rem;
+  }
+
+  input{
+      height: 100%;
+      width: 100%;
+  }

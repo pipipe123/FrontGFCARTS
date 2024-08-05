@@ -1,0 +1,95 @@
+.mensaje {
+    position: absolute;
+    text-align: center;
+    top: -40%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+    width: 100%;
+    animation: entrada 2s forwards;
+    font-size: 3rem;
+}
+
+
+h1{
+    color: black;
+}
+@keyframes entrada {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.forms-evento {
+    position: fixed; /* O absolute si prefieres */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición */
+    background: white; /* Fondo blanco para destacarse */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto flotante */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 50%;
+    height: 30%;
+}
+
+.forms-content-evento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    animation: text-in-signup 3s backwards;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.formularios-evento {
+
+     
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    box-shadow: 0 0px -10px rgba(0, 0, 0, 0.7);
+}
+
+.forms-content-evento table {
+    width: 100%;
+}
+
+.forms-content-evento form {
+    width: 100%;
+}
+
+.forms-content-evento td {
+    padding: 1rem;
+}
+
+.mensaje  h1 {
+    font-size: 6rem;
+}
+.enviar{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+form{
+    display: flexbox;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

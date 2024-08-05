@@ -1,0 +1,89 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-background {
+    opacity: 0;
+    animation: fade-in 2s ease-out forwards;
+    animation-delay: 2s;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-image: url('../assets/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.inicio {
+    display: flex;
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 65%;
+    align-items: center;
+    z-index: 2;
+}
+
+.inicio-head {
+    display: flex;
+    position: relative;
+    opacity: 0;
+    font-size: 5rem;
+    color: rgb(20, 20, 20);
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: slide-in 2s ease-out forwards;
+    animation-delay: 2s; /* Delay para que aparezca después del fondo */
+    margin-left: auto;
+}
+
+.inicio-head h2 {
+    opacity: 0;
+    animation: slide-in 1s ease-out forwards;
+    animation-delay: 2.5s; /* Delay para el título */
+}
+
+.inicio-head p {
+    opacity: 0;
+    animation: slide-in 1s ease-out forwards;
+    animation-delay: 3s; /* Delay para el párrafo */
+}
+
+.inicio-head button {
+    opacity: 0;
+    animation: slide-in 1s ease-out forwards;
+    animation-delay: 3.5s; /* Delay para el botón */
+}
+
+.presentacion h2,
+.presentacion p {
+    margin: 0;
+    padding: 0;
+}
+
+.presentacion p {
+    font-size: 1rem;
+}

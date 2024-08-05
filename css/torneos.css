@@ -1,0 +1,181 @@
+/* Estilos generales */
+.sidebar-torneos button {
+  width: 100%;
+}
+
+.sidebar-torneos button:hover,
+.sidebar-torneos button:active {
+  transform: translateX(10px) translateY(10px);
+}
+
+.sidebar-torneos ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-torneos ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+}
+
+.container-torneos {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura del contenedor principal */
+  overflow: hidden; /* Asegura que no haya desbordamiento en el contenedor principal */
+}
+
+.menu-icon-torneos {
+  font-size: 40px;
+}
+
+.menu-icon-main {
+  margin: 10px;
+  font-size: 60px;
+}
+
+.sidebar-torneos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.content-torneos {
+  margin-left: 100px;
+  padding-top: 10vh;
+  position: relative;
+  height: 100vh; /* Ajusta la altura del contenido principal */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+.content-torneos::-webkit-scrollbar {
+  width: 10px;
+}
+
+.content-torneos::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.content-torneos::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+.content-torneos::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.scrollable-content-torneos {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.scrollable-content-torneos ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scrollable-content-torneos li {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; /* Asegura que el mensaje esté posicionado correctamente */
+}
+
+.fondo-principal-torneos {
+  position: fixed; /* Fija el fondo principal */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.fondo-principal-torneos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-container-torneos {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 20px 0;
+}
+
+.admin-torneos,
+.info-container-torneos {
+  display: flex;
+  flex-direction: column;
+}
+
+.competidores-list {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.competidores-horizontal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competidores-horizontal li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.no-competidores {
+  color: red;
+  font-weight: bold;
+}
+
+.torneo-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+.btn-graficar {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,89 @@
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.content {
+    position: relative;
+    width: 100%;
+    /* color: bisque; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+
+input {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: black;
+    background: none;
+    box-shadow: none;
+    outline: none;
+}
+
+select{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: black;
+    background: none;
+    box-shadow: none;
+    outline: none; 
+}
+
+input:active{
+    background-color: none;
+    border: none;
+}
+
+
+
+button {
+    height: 3rem;
+    width: 7rem;
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+button:active {
+    color: black;
+    background-color: white;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color: black; /* Cambia el color al pasar el cursor */
+  }
+  
+  a:active {
+    color: black; /* Cambia el color cuando el enlace está activo */
+  }
+  
+  a:visited {
+    color:black
+  }

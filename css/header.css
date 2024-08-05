@@ -1,0 +1,64 @@
+@keyframes slide-in2 {
+  from {
+      transform: translatey(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translatey(0);
+      opacity: 1;
+  }
+}
+.logoGfcarts {
+  width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto;
+  margin-left: 10px;
+}
+.sticky-header {
+  opacity: 0;
+    animation: slide-in2 1s ease-out forwards;
+    animation-delay: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: auto;
+    text-align: left;
+
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+
+    padding: 10px 0;
+    padding-left: 10%;
+    z-index: 1000; /* Asegura que el header esté sobre otros elementos */
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para destacar el header */
+  }
+  .logo-img {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 20px; /* Ajusta el margen derecho para separar el logo del título */
+    padding-right: 5%;
+  }
+  .Infos{
+
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0%;
+  }
+  .Infos h2{
+    padding-right: 10%;
+  }
+
+ a{
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    transition: all 0.4s ease;
+    display: inline-block;
+  }
+  
+  a:hover {
+    transform: scale(1.2);
+  }
