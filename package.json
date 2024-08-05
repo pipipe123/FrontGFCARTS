@@ -8,10 +8,10 @@
       "android",
       "web"
     ],
-    "scripts": {
-      "start": "serve -s web-build",
-      "web": "npx expo export:web"
-    },
+"scripts": {
+  "start": "serve -s web-build",
+  "build": "npx expo export:web"
+},
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
