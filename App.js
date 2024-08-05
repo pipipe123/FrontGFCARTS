@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/general.css';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
 import MainApp from './components/mainapp.js'; // Corrección aquí
-import Header from './components/header.js';
+// import Header from './components/header.js';
 import Signup from './screens/signup.js';
 import Login from './screens/login.js'; // Corrección aquí
 import Competidor from './components/competidor.js';
